@@ -1,0 +1,185 @@
+/* Police de caractères inspirée de Chanel */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap');
+
+
+
+body {
+  margin: 20px; /* Ajoute une marge de 20 pixels de chaque côté du corps */
+  padding: 0;
+  font-family: "American Typewriter", sans-serif; /* Police de caractères */
+  text-align: center;
+  background-color: #FEFEFC;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Aligner verticalement le contenu */
+}
+
+.texte-droite {
+  /* float: right; / / Supprimer cette ligne */
+  margin-left: 50px; /* Ajouter une marge gauche de 20px */
+  margin-right:80px;
+}
+
+.image-gauche {
+  /* float: right; / / Supprimer cette ligne */
+  margin-left: 30px; /* Ajouter une marge gauche de 20px */
+  margin-right:20px;
+}
+/* Style pour les titres H1 */
+h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+
+h3{
+    text-align: center;
+    font-family: "Yves Saint Laurent", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000; /* Noir */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.banner {
+    background-color: #FFE4B5; /* Orange pâle */
+    padding: 10px ;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #333; /* Couleur du texte */
+    padding: 5px 10px;
+    border: 1px solid #333; /* Bordure pour séparer les liens */
+    border-radius: 5px; /* Coins arrondis */
+    transition: all 0.3s ease; /* Transition pour une animation fluide */
+}
+
+.menu li a:hover {
+    background-color: #333; /* Fond au survol */
+    color: #FFF; /* Texte blanc au survol */
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+}
+
+/* Conteneur principal */
+.overlay-image {
+ position: relative;
+}
+
+.img-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Image originale */
+.overlay-image .cuba {
+ display: block;
+ height: auto;
+}
+
+.overlay-image .roma {
+ display: block;
+ height: auto;
+}
+
+.overlay-image .santorini {
+ display: block;
+ height: auto;
+}
+
+/* Texte original */
+.overlay-image .text {
+ color: #fff;
+ font-size: 30px;
+ line-height: 1.5em;
+ text-shadow: 2px 2px 2px #000;
+ text-align: center;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ width: 100%;
+}
+
+/* Overlay */
+.overlay-image .hover {
+ position: absolute;
+ top: 0;
+ height: 100%;
+ width: 100%;
+ opacity: 0;
+ transition: .5s ease;
+}
+
+/* Apparition overlay sur passage souris */
+.overlay-image:hover .hover {
+ opacity: 1;
+}
+
+/********* Hover background et texte uniquement *******/
+
+.overlay-image .normal {
+ transition: .5s ease;
+}
+.overlay-image:hover .normal {
+ opacity: 0;
+}
+.overlay-image .hover {
+ background-color: rgba(0,0,0,0.5);
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 3rem;
+    gap: 10rem;
+}
+
+.testimonials .review {
+    box-shadow: rgba(145, 157, 165, 0.2) 0px 15px 34px;
+    border-radius: 2rem;
+    height: 9rem;
+    width: 20rem;
+    padding: 3rem;
+}
+
+.testimonials .content .subTitle {
+    font-size: 1.3rem;
+
+.testimonials .content .title {
+    font-size: 2rem;
+}
+
+
